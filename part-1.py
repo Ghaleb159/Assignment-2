@@ -1,4 +1,5 @@
-'''(inputs)
+'''
+(inputs)
 Product Code (e.g., an integer from 100 to 1000) 
 Product Name (e.g. Laser Printer)
 Product Sale Price (e.g., a real number greater than zero)
@@ -35,12 +36,12 @@ while True:
 
 while True:
     try:
-        monthly_units_manufactured = float(input('\nPLEASE ENTER ESTIMATED MONTHLY PRODUCTION:  '))
+        monthly_units_manufactured = int(input('\nPLEASE ENTER ESTIMATED MONTHLY PRODUCTION:  '))
         if monthly_units_manufactured > 0:
              print(f'\nESTIMATED MONTHLY PRODUCTION IS {monthly_units_manufactured}')
              break
         else:
-            monthly_units_manufactured = float(input('\nINVALID ENTRY, PLEASE ENTER ESTIMATED MONTHLY PRODUCTION AGAIN:  '))
+            monthly_units_manufactured = int(input('\nINVALID ENTRY, PLEASE ENTER ESTIMATED MONTHLY PRODUCTION AGAIN:  '))
     except ValueError:
         print('\nINVALID ENTRY, PLEASE ENTER ESTIMATED MONTHLY PRODUCTION!!!')
 
