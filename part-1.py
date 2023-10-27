@@ -10,8 +10,8 @@ class product:
 
     #CLASSMETHOD CHANGES 'INVENTORY_AMOUNT' TO THE MONTHLY INVENTORY AMOUNT
     @classmethod
-    def change_inventory_amount(cls, stock_amount):
-        cls.inventory_amount = stock_amount
+    def change_inventory_amount(cls, inventory_amount):
+        cls.inventory_amount = inventory_amount
 
     #PRODUCT_QUANTITY_SOLD METHOD CREATES A RANGE USING MONTHLY_PRODUCT_PRODUCTION TO GET A RANDINT BETWEEN 
     # SELF.MINUS_PRODUCT & SELF.ADD_PRODUCT WHICH WOULD BE THE PRODUCT_QUANTITY_SOLD  
@@ -29,16 +29,6 @@ class product:
         cls.inventory_level = cls.inventory_level - product_quantity_sold
         return cls.inventory_level
     
-        
-'''
-(inputs)
-Product Code (e.g., an integer from 100 to 1000) 
-Product Name (e.g. Laser Printer)
-Product Sale Price (e.g., a real number greater than zero)
-Product Manufacture Cost (e.g., a real number greater than zero)
-Stock Level (an integer number greater than 0)
-Estimated Monthly Units Manufactured (e.g. an integer greater than or equal to 0)
-'''
 
 #CREATED A FUNCTION
 def investment():
